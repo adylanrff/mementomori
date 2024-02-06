@@ -53,19 +53,25 @@ export default function Countdown({ endDate }: { endDate: Date }) {
       </div>
       <div className="flex flex-col p-2 ">
         <span className="countdown font-mono text-3xl md:text-8xl">
-          <span style={{ "--value": timeLeft.hours }}></span>
+          <span
+            style={{ "--value": timeLeft.hours } as React.CSSProperties}
+          ></span>
         </span>
         hours
       </div>
       <div className="flex flex-col p-2 ">
         <span className="countdown font-mono text-3xl md:text-8xl">
-          <span style={{ "--value": timeLeft.minutes }}></span>
+          <span
+            style={{ "--value": timeLeft.minutes } as React.CSSProperties}
+          ></span>
         </span>
         min
       </div>
       <div className="flex flex-col p-2 ">
         <span className="countdown font-mono text-3xl md:text-8xl">
-          <span style={{ "--value": timeLeft.seconds }}></span>
+          <span
+            style={{ "--value": timeLeft.seconds } as React.CSSProperties}
+          ></span>
         </span>
         sec
       </div>
